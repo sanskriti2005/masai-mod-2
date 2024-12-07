@@ -18,4 +18,12 @@ let ratingDetails = filteredDetails.map((ele,i) => ({
 console.log(ratingDetails);
 
 // Sort the final array of employees in descending order based on their performance level, prioritizing "Excellent", then "Good", and finally "Needs Improvement".
+let sortedDetails = ratingDetails.sort((a,b) => {
+    if(a.performance < b.performance){
+        return -1
+    } else {
+        return 1
+    }
+})
+console.log(sortedDetails);
 
